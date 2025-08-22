@@ -2,7 +2,7 @@ export default function Home() {
 
   return (
     <div className="bg-white py-10 lg:py-32 xl:py-52 overflow-hidden">
-      <div className="lg:grid grid-cols-2 px-5 sm:px-10 lg:px-20 xl:px-32 montserrat items-center justify-center space-y-10 md:space-y-10 space-x-10 h-full">
+      <div className="flex flex-col sm:flex-row px-5 sm:px-10 lg:px-20 xl:px-32 montserrat items-center justify-center space-y-10 md:space-y-10 space-x-15 h-full">
       {/* Left Section, Text */}
         <div className="space-y-3">
           <h2 className="text-4xl lg:text-5xl xl:text-7xl font-bold">Find your next big role at HireLink</h2>
