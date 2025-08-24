@@ -1,4 +1,15 @@
+'use client';
+import { useRouter } from 'next/router';
+import useAuth from '../hooks/useAuth';
+
 export default function Home() {
+  const { user, loading } = useAuth();
+  const router = useRouter();
+
+  if (!loading && user) {
+    router.push('/dashboard');
+    return null; 
+  }
 
   return (
     <div className="bg-white py-10 lg:py-32 xl:py-52 overflow-hidden">
